@@ -1,0 +1,18 @@
+http://www.xbox.com/Live/Friends.aspx?p=15&lid=1053
+
+
+//Lists all friends
+http://www.xbox.com/Live/Friends.aspx?p=2
+
+//Lists all friends and online status
+http://www.xbox.com/Live/Friends.aspx?p=3
+
+//Lists all friends in english
+http://www.xbox.com/Live/Friends.aspx?p=6
+
+//Lists all friends and online status in english
+http://www.xbox.com/Live/Friends.aspx?p=7
+
+
+
+https://login.passport.com/ppsecure/secure.srf?lc=1053&id=41381&ru=https%3a%2f%2fwww.xbox.com%2fsv-SE%2fdefault.htm&tw=1800&kv=2&ct=1102794310&cb=Xbox&ems=1&seclog=10&ver=2.5.1016.0&tpf=e32d7a1b496f972b2cfd3a9532bc8b20

@@ -1,0 +1,22 @@
+﻿@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Index</title>
+</head>
+<body>
+	<div>
+		<h3>Packa alla GPX filer i en zip och ladda upp nedan för att skapa en heatmap över alla GPX:er.</h3><br />
+		@using (Html.BeginForm("UploadZip", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+		{
+			<input type="file" name="zipFile" id="zipFile" /><br />
+			<input type="submit" value="Skicka" />
+		}
+	</div>
+</body>
+</html>

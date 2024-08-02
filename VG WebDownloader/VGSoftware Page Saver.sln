@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Page Saver", "Page Saver.csproj", "{A20A7C28-EF6A-45CD-9386-CB3B08AE9507}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {6775334D-87A4-439D-A2BD-372B886E5792}
+		SccProjectUniqueName1 = Page\u0020Saver.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A20A7C28-EF6A-45CD-9386-CB3B08AE9507}.Debug.ActiveCfg = Debug|.NET
+		{A20A7C28-EF6A-45CD-9386-CB3B08AE9507}.Debug.Build.0 = Debug|.NET
+		{A20A7C28-EF6A-45CD-9386-CB3B08AE9507}.Release.ActiveCfg = Release|.NET
+		{A20A7C28-EF6A-45CD-9386-CB3B08AE9507}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

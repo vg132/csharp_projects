@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Game</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="jQueryRotate.js" type="text/javascript"></script>
+		<script src="Graphics.js" type="text/javascript"></script>
+		<script src="Object.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			function Log(message) {
+				jQuery("#Debug").append(message + "<br />");
+			}
+
+			setInterval(onTimerTick, 33);
+
+			var currentField;
+
+			function onTimerTick() {
+				if (!IsNullOrEmpty(currentField)) {
+					currentField.updateWorld();
+					jQuery("#Points").text(currentField.getPoints() + ' points');
+				}
+			}
+
+			jQuery(document).ready(function () {
+				currentField = new Field("#GameField");
+				for (var i = 0; i < 5; i++) {
+					currentField.createObject();
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="GameField" style="width:700px;height:500px;top:50px;left:50px;clear:both;background-image:url(Images/Background.png);">
+		</div>
+		<div id="Points" style="font-size:20px;font-family:Arial;font-weight:bold;">0 points</div>
+		<div id="Debug" style="width:700px;height:500px;top:50px;left:50px;clear:both;">
+		</div>
+	</body>
+</html>

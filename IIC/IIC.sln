@@ -1,0 +1,40 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IICApp", "IICApp\IICApp.csproj", "{730A6C8C-6E68-4883-851C-27057D03CC10}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IICPluginInterface", "IICPluginInterface\IICPluginInterface.csproj", "{D3838C12-2539-438D-B98C-4F9840DC7BFC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple RSS", "RSS\Simple RSS.csproj", "{9A462A36-2634-49C4-880F-AD4B9EE948E8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{730A6C8C-6E68-4883-851C-27057D03CC10}.Debug.ActiveCfg = Debug|.NET
+		{730A6C8C-6E68-4883-851C-27057D03CC10}.Debug.Build.0 = Debug|.NET
+		{730A6C8C-6E68-4883-851C-27057D03CC10}.Release.ActiveCfg = Release|.NET
+		{730A6C8C-6E68-4883-851C-27057D03CC10}.Release.Build.0 = Release|.NET
+		{D3838C12-2539-438D-B98C-4F9840DC7BFC}.Debug.ActiveCfg = Debug|.NET
+		{D3838C12-2539-438D-B98C-4F9840DC7BFC}.Release.ActiveCfg = Release|.NET
+		{D3838C12-2539-438D-B98C-4F9840DC7BFC}.Release.Build.0 = Release|.NET
+		{9A462A36-2634-49C4-880F-AD4B9EE948E8}.Debug.ActiveCfg = Debug|.NET
+		{9A462A36-2634-49C4-880F-AD4B9EE948E8}.Debug.Build.0 = Debug|.NET
+		{9A462A36-2634-49C4-880F-AD4B9EE948E8}.Release.ActiveCfg = Release|.NET
+		{9A462A36-2634-49C4-880F-AD4B9EE948E8}.Release.Build.0 = Release|.NET
+		{8BFEDB74-D908-429B-856F-F17F97D05FBD}.Debug.ActiveCfg = Debug|.NET
+		{8BFEDB74-D908-429B-856F-F17F97D05FBD}.Debug.Build.0 = Debug|.NET
+		{8BFEDB74-D908-429B-856F-F17F97D05FBD}.Release.ActiveCfg = Release|.NET
+		{8BFEDB74-D908-429B-856F-F17F97D05FBD}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

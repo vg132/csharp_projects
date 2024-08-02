@@ -1,0 +1,121 @@
+﻿
+<html>
+	<head>
+		<META HTTP-EQUIV="Refresh" CONTENT="150">
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+		<style type="text/css">
+			TABLE{FONT-SIZE:8pt;COLOR:#000000;FONT-FAMILY:Verdana,Arial,Helvetica,sans-serif;}
+			A:link.Xbox{COLOR:#339900;TEXT-DECORATION:none;}
+			A:hover.Xbox{COLOR:#339900;TEXT-DECORATION:underline;}
+			A:visited.Xbox{COLOR:#339900;TEXT-DECORATION:none;}
+			A:visited:hover.Xbox{COLOR:#339900;TEXT-DECORATION:underline;}
+			A:link.small{COLOR:#000000;FONT-SIZE:7pt;TEXT-DECORATION:none;}
+			A:hover.small{COLOR:#000000;FONT-SIZE:7pt;TEXT-DECORATION:underline;}
+			A:visited.small{COLOR:#000000;FONT-SIZE:7pt;TEXT-DECORATION:none;}
+			A:visited:hover.small{COLOR:#000000;FONT-SIZE:7pt;TEXT-DECORATION:underline;}
+		</style>
+	</head>
+	<body bgColor="#ECECEC" style="margin:0px;overflow:auto;" leftMargin="0" topMargin="0" marginheight="0" marginwidth="0">
+		<form name="_ctl0" method="post" action="Friends.aspx?p=15&amp;lid=1053" id="_ctl0">
+<input type="hidden" name="__VIEWSTATE" value="dDwxOTI3NDMzMzMyO3Q8O2w8aTwxPjs+O2w8dDxwPGw8VGV4dDs+O2w8XDxNRVRBIEhUVFAtRVFVSVY9IlJlZnJlc2giIENPTlRFTlQ9IjE1MCJcPjs+Pjs7Pjs+Pjs+cqSBRCvzWpxqot8b7Zbi6sXV8Xg=" />
+
+
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td height="2" bgcolor="#FFC65F"><img src="/xsys/images/spacer.gif" height="2"></td>
+		</tr>
+	
+		<tr>
+			<td>
+				<table bgcolor="ECECEC" width="100%" cellpadding="2" cellspacing="0" border="0">
+					<tr>
+						<td id="_ctl1__ctl0_FriendsRepeater__ctl1_IconCell" width="19"><img src="/xsys/images/friends/friend.gif" id="_ctl1__ctl0_FriendsRepeater__ctl1_FriendIcon" width="19" height="19" /></td>
+
+						<td><b>mrjohansson</b> spelar Pro Evolution Soccer 4.</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td height="2" bgcolor="#FFC65F"><img src="/xsys/images/spacer.gif" height="2"></td>
+		</tr>
+	
+		<tr>
+			<td>
+				<table bgcolor="#DDDDDD" width="100%" cellpadding="2" cellspacing="0" border="0">
+					<tr>
+						<td id="_ctl1__ctl0_FriendsRepeater__ctl2_IconCell" width="19"></td>
+
+						<td><b>MANIAC MINER</b> är inte uppkopplad.</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td height="2" bgcolor="#FFC65F"><img src="/xsys/images/spacer.gif" height="2"></td>
+		</tr>
+	
+		<tr>
+			<td>
+				<table bgcolor="ECECEC" width="100%" cellpadding="2" cellspacing="0" border="0">
+					<tr>
+						<td id="_ctl1__ctl0_FriendsRepeater__ctl3_IconCell" width="19"></td>
+
+						<td><b>McHighpants</b> är inte uppkopplad.</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td height="2" bgcolor="#FFC65F"><img src="/xsys/images/spacer.gif" height="2"></td>
+		</tr>
+	
+		<tr>
+			<td>
+				<table bgcolor="#DDDDDD" width="100%" cellpadding="2" cellspacing="0" border="0">
+					<tr>
+						<td id="_ctl1__ctl0_FriendsRepeater__ctl4_IconCell" width="19"></td>
+
+						<td><b>ricardof1</b> är inte uppkopplad.</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td height="2" bgcolor="#FFC65F"><img src="/xsys/images/spacer.gif" height="2"></td>
+		</tr>
+	
+		<tr>
+			<td>
+				<table bgcolor="ECECEC" width="100%" cellpadding="2" cellspacing="0" border="0">
+					<tr>
+						<td id="_ctl1__ctl0_FriendsRepeater__ctl5_IconCell" width="19"></td>
+
+						<td><b>Scorg</b> är inte uppkopplad.</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td height="2" bgcolor="#FFC65F"><img src="/xsys/images/spacer.gif" height="2"></td>
+		</tr>
+	
+		<tr>
+			<td>
+				<table bgcolor="#DDDDDD" width="100%" cellpadding="2" cellspacing="0" border="0">
+					<tr>
+						<td id="_ctl1__ctl0_FriendsRepeater__ctl6_IconCell" width="19"></td>
+
+						<td><b>SeanValen</b> är inte uppkopplad.</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td height="2" bgcolor="#FFC65F"><img src="/xsys/images/spacer.gif" height="2"></td>
+		</tr>
+	
+		</table>
+	</form>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodePadTemplate>
+	<Description>
+		<Name>Console Application</Name>
+		<Author>Viktor Gars</Author>
+		<Description>Console application with main method</Description>
+		<Category>C#</Category>
+		<FileNameTemplate>Class{0}.cs</FileNameTemplate>
+		<IconIndex>1</IconIndex>
+	</Description>
+	<Template>
+		<![CDATA[
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CSharp
+{
+	public class Class1
+	{
+		public static void Main(string[] args)
+		{
+		}
+	}
+}
+		]]>
+	</Template>
+</CodePadTemplate>

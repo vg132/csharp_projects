@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IICPluginInterface</name>
+    </assembly>
+    <members>
+        <member name="T:IIC.Plugin.IPlugin">
+            <summary>
+            Interface for communication between the host application and the plugin.
+            </summary>
+        </member>
+        <member name="M:IIC.Plugin.IPlugin.TreeNodeSelected(System.Windows.Forms.TreeNode)">
+            <summary>
+            Called by the host application when a tree node is selected.
+            </summary>
+            <param name="tn">The selected tree node.</param>
+        </member>
+        <member name="M:IIC.Plugin.IPlugin.TreeNodeMouseUp(System.Windows.Forms.TreeNode)">
+            <summary>
+            Called by the host application when a tree node is right clicked on.
+            Returns the context menu that will be shown.
+            </summary>
+            <param name="tn">The selected tree node.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IIC.Plugin.IPlugin.AlertResponse(System.Object)">
+            <summary>
+            When a alert has been seen and responded by the user this function is called
+            with the id provided with the alert as its argument.
+            </summary>
+            <param name="id">The id for this alert.</param>
+        </member>
+        <member name="M:IIC.Plugin.IPlugin.LoadPlugin">
+            <summary>
+            Called when the plugin has been loaded.
+            </summary>
+        </member>
+        <member name="M:IIC.Plugin.IPlugin.UnloadPlugin">
+            <summary>
+            Called just before the plugin will be unloaded.
+            </summary>
+        </member>
+        <member name="P:IIC.Plugin.IPlugin.Host">
+            <summary>
+            A reference to the host application.
+            </summary>
+        </member>
+        <member name="P:IIC.Plugin.IPlugin.PluginName">
+            <summary>
+            The name of this plugin.
+            </summary>
+        </member>
+        <member name="P:IIC.Plugin.IPlugin.Description">
+            <summary>
+            A description of this plugin.
+            </summary>
+        </member>
+        <member name="P:IIC.Plugin.IPlugin.Author">
+            <summary>
+            The author of this plugin.
+            </summary>
+        </member>
+        <member name="P:IIC.Plugin.IPlugin.Version">
+            <summary>
+            The version of this plugin.
+            </summary>
+        </member>
+        <member name="P:IIC.Plugin.IPlugin.Form">
+            <summary>
+            The current user control to show for this plugin.
+            </summary>
+        </member>
+        <member name="P:IIC.Plugin.IPlugin.TreeRoot">
+            <summary>
+            The root element for this plugins in the tree view.
+            </summary>
+        </member>
+        <member name="T:IIC.Plugin.IPluginHost">
+            <summary>
+            Interface for communication between the plugin and the host application.
+            </summary>
+        </member>
+        <member name="M:IIC.Plugin.IPluginHost.ShowAlert(IIC.Plugin.IPlugin,System.Object,System.String)">
+            <summary>
+            Tells the host application that it should alert the user of events in this plugin
+            </summary>
+            <param name="plugin">Reference to the calling plugin.</param>
+            <param name="message">Text in the alert window.</param>
+            <param name="id">Id value that will be sent back to the plugin when the user awnsers a alert.</param>
+        </member>
+        <member name="M:IIC.Plugin.IPluginHost.UpdateForm(IIC.Plugin.IPlugin)">
+            <summary>
+            Called by the plugin when the host appliction must get a new
+            user control from the plugin.
+            </summary>
+        </member>
+        <member name="P:IIC.Plugin.IPluginHost.StatusBarMessage">
+            <summary>
+            Sets a message in the programs statusbar.
+            </summary>
+        </member>
+        <member name="P:IIC.Plugin.IPluginHost.Plugins">
+            <summary>
+            Gets a list of all loaded plugins in the host application.
+            </summary>
+        </member>
+        <member name="P:IIC.Plugin.IPluginHost.DataDirectory">
+            <summary>
+            Gets the users selected data directory.
+            </summary>
+        </member>
+        <member name="P:IIC.Plugin.IPluginHost.PluginDirectory">
+            <summary>
+            Gets the directory where all plugins are loaded from.
+            </summary>
+        </member>
+        <member name="P:IIC.Plugin.IPluginHost.ApplicationDirectory">
+            <summary>
+            Gets the application directory root.
+            </summary>
+        </member>
+    </members>
+</doc>

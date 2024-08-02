@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodePadTemplate>
+	<Description>
+		<Name>Empty file</Name>
+		<Author>Viktor Gars</Author>
+		<Description>Empty file</Description>
+		<Category>Other</Category>
+		<FileNameTemplate>File{0}.txt</FileNameTemplate>
+		<IconIndex>0</IconIndex>
+	</Description>
+	<Template>
+		<![CDATA[
+		]]>
+	</Template>
+</CodePadTemplate>

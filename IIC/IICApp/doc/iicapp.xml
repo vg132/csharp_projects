@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InternetInformationCenter</name>
+    </assembly>
+    <members>
+        <member name="T:IIC.Alert.PopupData">
+            <summary>
+            Summary description for PopupData.
+            </summary>
+        </member>
+        <member name="M:IIC.Alert.PopupData.#ctor(IIC.Plugin.IPlugin,System.Object,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="plugin"></param>
+            <param name="id"></param>
+            <param name="message"></param>
+        </member>
+        <member name="P:IIC.Alert.PopupData.Message">
+            <summary>
+            Gets and sets the string value of message.
+            </summary>
+        </member>
+        <member name="P:IIC.Alert.PopupData.Plugin">
+            <summary>
+            Gets and sets the IPlugin value of plugin.
+            </summary>
+        </member>
+        <member name="P:IIC.Alert.PopupData.Id">
+            <summary>
+            Gets and sets the object value of id.
+            </summary>
+        </member>
+        <member name="T:IIC.Alert.PopupForm">
+            <summary>
+            Summary description for Popupthis.
+            </summary>
+        </member>
+        <member name="F:IIC.Alert.PopupForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:IIC.Alert.PopupForm.AddPopup(IIC.Alert.PopupData)">
+            <summary>
+            
+            </summary>
+            <param name="pd"></param>
+        </member>
+        <member name="M:IIC.Alert.PopupForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:IIC.Alert.PopupForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:IIC.Alert.PopupForm.ShowPopup">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:IIC.Alert.PopupForm.Instance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:IIC.Alert.PopupForm.PopupState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIC.Alert.PopupForm.PopupState.Hidden">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIC.Alert.PopupForm.PopupState.Appearing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIC.Alert.PopupForm.PopupState.Visible">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIC.Alert.PopupForm.PopupState.Disappearing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:IIC.frmAboutPlugin">
+            <summary>
+            Summary description for AboutPlugin.
+            </summary>
+        </member>
+        <member name="F:IIC.frmAboutPlugin.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:IIC.frmAboutPlugin.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:IIC.frmAboutPlugin.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:IIC.frmAboutPlugin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:IIC.frmAboutPlugin.SetPlugin(IIC.Plugin.IPlugin)">
+            <summary>
+            Sets the current plugin and gets the information from that one.
+            </summary>
+            <param name="plugin">A reference to the plugin.</param>
+        </member>
+        <member name="T:IIC.Plugin.AvailablePlugin">
+            <summary>
+            Data Class for Available Plugin. Holds and instance of the loaded Plugin, as well as the Plugin's Assembly Path
+            </summary>
+        </member>
+        <member name="P:IIC.Plugin.AvailablePlugin.Instance">
+            <summary>
+            Gets and sets the plugin instance.
+            </summary>
+        </member>
+        <member name="P:IIC.Plugin.AvailablePlugin.AssemblyPath">
+            <summary>
+            Gets and sets the plugin assembly path.
+            </summary>
+        </member>
+        <member name="T:IIC.Plugin.AvailablePlugins">
+            <summary>
+            Collection for AvailablePlugin Type
+            </summary>
+        </member>
+        <member name="M:IIC.Plugin.AvailablePlugins.Add(IIC.Plugin.AvailablePlugin)">
+            <summary>
+            Add a Plugin to the collection of Available plugins
+            </summary>
+            <param name="pluginToAdd">The Plugin to Add</param>
+        </member>
+        <member name="M:IIC.Plugin.AvailablePlugins.Remove(IIC.Plugin.AvailablePlugin)">
+            <summary>
+            Remove a Plugin to the collection of Available plugins
+            </summary>
+            <param name="pluginToRemove">The Plugin to Remove</param>
+        </member>
+        <member name="M:IIC.Plugin.AvailablePlugins.Find(System.String)">
+            <summary>
+            Finds a plugin in the available Plugins
+            </summary>
+            <param name="pluginNameOrPath">The name or File path of the plugin to find</param>
+            <returns>Available Plugin, or null if the plugin is not found</returns>
+        </member>
+        <member name="T:IIC.Plugin.PluginServices">
+            <summary>
+            Summary description for PluginServices.
+            </summary>
+        </member>
+        <member name="M:IIC.Plugin.PluginServices.#ctor">
+            <summary>
+            Constructor of the Class
+            </summary>
+        </member>
+        <member name="M:IIC.Plugin.PluginServices.FindPlugins(IIC.Plugin.IPluginHost,System.String)">
+            <summary>
+            Searches the passed Path for Plugins.
+            </summary>
+            <param name="Path">Directory to search for Plugins in.</param>
+            <param name="host">Reference to the host application.</param>
+        </member>
+        <member name="M:IIC.Plugin.PluginServices.ClosePlugins">
+            <summary>
+            Unloads and Closes all AvailablePlugins
+            </summary>
+        </member>
+        <member name="P:IIC.Plugin.PluginServices.AvailablePlugins">
+            <summary>
+            A Collection of all Plugins Found and Loaded by the FindPlugins() Method
+            </summary>
+        </member>
+        <member name="T:IIC.Global">
+            <summary>
+            Class to give global access to the static variable <c>Plugins</c>.
+            </summary>
+        </member>
+        <member name="F:IIC.Global.Plugins">
+            <summary>
+            Static variable to a <c>PluginServices</c> object, only one needed for this application.
+            </summary>
+        </member>
+        <member name="M:IIC.Global.#ctor">
+            <summary>
+            Default empty constructor.
+            </summary>
+        </member>
+        <member name="T:IIC.Host">
+            <summary>
+            Summary description for Host.
+            </summary>
+        </member>
+        <member name="M:IIC.Host.#ctor(IIC.IIC)">
+            <summary>
+            
+            </summary>
+            <param name="form"></param>
+        </member>
+        <member name="M:IIC.Host.ShowAlert(IIC.Plugin.IPlugin,System.Object,System.String)">
+            <summary>
+            Activates a alert for ths user with the specified information.
+            </summary>
+            <param name="plugin">Reference to the calling plugin.</param>
+            <param name="id">Id for this alert, sent back to plugin when user awnsers alert call.</param>
+            <param name="message">The message in the alert window.</param>
+        </member>
+        <member name="M:IIC.Host.UpdateForm(IIC.Plugin.IPlugin)">
+            <summary>
+            Called when the plugin wants to update the user control.
+            Only updates the view if the calling plugin is the active plugin.
+            </summary>
+            <param name="plugin">The calling plugin</param>
+        </member>
+        <member name="P:IIC.Host.Plugins">
+            <summary>
+            Returns a list of all loaded plugins.
+            </summary>
+        </member>
+        <member name="P:IIC.Host.StatusBarMessage">
+            <summary>
+            Sets the statusbar text.
+            </summary>
+        </member>
+        <member name="P:IIC.Host.ActivePlugin">
+            <summary>
+            Gets and sets the IPlugin value of activePlugin.
+            </summary>
+        </member>
+        <member name="P:IIC.Host.DataDirectory">
+            <summary>
+            Gets the users data directory.
+            </summary>
+        </member>
+        <member name="P:IIC.Host.PluginDirectory">
+            <summary>
+            Gets the plugin directory.
+            </summary>
+        </member>
+        <member name="P:IIC.Host.ApplicationDirectory">
+            <summary>
+            Gets the application directory.
+            </summary>
+        </member>
+        <member name="T:IIC.IIC">
+            <summary>
+            Summary description for Form1.
+            </summary>
+        </member>
+        <member name="M:IIC.IIC.#ctor">
+            <summary>
+            Default constructor, loades all plugins when called.
+            </summary>
+        </member>
+        <member name="M:IIC.IIC.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:IIC.IIC.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:IIC.IIC.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="M:IIC.IIC.SetForm(System.Windows.Forms.UserControl)">
+            <summary>
+            
+            </summary>
+            <param name="form"></param>
+        </member>
+        <member name="M:IIC.IIC.setStatusInformation(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="information"></param>
+        </member>
+        <member name="T:IIC.TreeInfoNode">
+            <summary>
+            Extended <c>TreeNode</c> that also holed a reference to the plugin and folder objects.
+            </summary>
+        </member>
+        <member name="M:IIC.TreeInfoNode.#ctor(IIC.Plugin.IPlugin,System.String)">
+            <summary>
+            Default constructor, takes the plugin, folder and the name.
+            </summary>
+            <param name="plugin">Reference to the plugin that this folder is part of.</param>
+            <param name="name">Name of this folder.</param>
+        </member>
+        <member name="P:IIC.TreeInfoNode.Plugin">
+            <summary>
+            Gets and sets the plugin.
+            </summary>
+        </member>
+    </members>
+</doc>

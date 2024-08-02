@@ -1,0 +1,115 @@
+﻿
+<ul id="trafficSituationTable">
+</ul>
+<hr />
+
+<select id="transportationTypeDropDown">
+</select>
+
+<select id="sitesDropDown">
+</select>
+
+<ul id="realTimeData">
+</ul>
+
+<script id="trafficSituationMarkup" type="text/x-jQuery-tmpl">
+	<li>${Name}</li>
+	<ul>
+		{{each TrafficEvent}}
+			<li>${Message}</li>
+		{{/each}}
+	</ul>
+</script>
+
+<script id="dropDownMarkup" type="text/x-jQuery-tmpl">
+	<option value="${Id}">
+		${Name}
+	</option>
+</script>
+
+<script id="realTimeDataMarkup" type="text/x-jQuery-tmpl">
+	<li>
+		${Destination} - ${DisplayTime} - ${ExpectedTime}
+		{{alert('kalle');}}
+	</li>
+</script>
+
+<input type="button" value="Kalle" id="showRealTime" />
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		loadTransportationTypes();
+		loadSites();
+		loadTrafficSituation();
+
+		$("#showRealTime").click(function(){
+			loadRealTimeData();
+		});
+
+		$("#transportationTypeDropDown").change(function(){
+			loadSites();
+		});
+
+		$("#sitesDropDown").change(function(){
+			loadRealTimeData();
+		});
+	});
+
+
+	function loadSites()
+	{
+		$.ajax({
+			type: 'POST',
+			url: '/Test/Sites',
+			dataType: 'json',
+			data: { typeId: $("#transportationTypeDropDown").val() },
+			success: function (d) {
+				$("#sitesDropDown").empty();
+				$("#dropDownMarkup").tmpl(d).appendTo("#sitesDropDown");
+				loadRealTimeData();
+			}
+		});
+	}
+
+	function loadTransportationTypes()
+	{
+		$.ajax({
+			type: 'POST',
+			url: '/Test/TransportationTypes',
+			dataType: 'json',
+			async:false,
+			success: function (d) {
+				$("#transportationTypeDropDown").empty();
+				$("#dropDownMarkup").tmpl(d).appendTo("#transportationTypeDropDown");
+			}
+		});
+	}
+
+	function loadTrafficSituation()
+	{
+		$.ajax({
+			type: 'POST',
+			url: '/Test',
+			dataType: 'json',
+			success: function (d) {
+				$("trafficSituationTable").empty();
+				$("#trafficSituationMarkup").tmpl(d).appendTo("#trafficSituationTable");
+			}
+		});
+	}
+
+	function loadRealTimeData()
+	{
+		$.ajax({
+			type: 'POST',
+			url: '/Test/RealTime',
+			dataType: 'json',
+			data: {typeId: $("#transportationTypeDropDown").val(), siteId: $("#sitesDropDown").val()},
+			success: function (d) {
+				$("#realTimeData").empty();
+				$("#realTimeDataMarkup").tmpl(d).appendTo("#realTimeData");
+			},
+		});
+	}
+</script>

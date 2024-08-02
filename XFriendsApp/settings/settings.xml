@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1" ?> 
+<settings>
+	<setting option="UpdateFrequency" value="60000"/>
+	<setting option="OfflineSound" value=""/>
+	<setting option="OnlineSound" value=""/>
+	<setting option="PassportLink" value="login.passport.com"/>
+	<setting option="LoginLinkPrefix" value="https://"/>
+	<setting option="OnlineSuffix" value="is playing"/>
+	<setting option="OfflineSuffix" value="is offline."/>
+	<setting option="MainPage" value="http://www.xbox.com/"/>
+	<setting option="FriendsPage" value="http://www.xbox.com/Live/Friends.aspx?p=7"/>
+	<setting option="LoginErrorPage" value="https://login.passport.net/ppsecure/uisecure.srf?id="/>
+</settings>
